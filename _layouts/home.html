@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="main-box">
+    {% if page.background %}
+    <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    {% else %}
+    <header class="masthead">
+    {% endif %}
+        <div class="overlay">
+        </div>
+        <div class="welcome-box">
+            <div class="welcome">欢迎访问</div>
+            <div class="group">浙江工业大学网络空间安全研究院无人系统组</div>
+        </div>
+    </header>
+
+    <div class="box1">
+        <div class="content-nav-wrap clearfix">
+            <div class="nav-wrap">
+                <li class="act">
+                    <a class="lang" href="javascript:" id="group-intro">
+                        小组简介
+                    </a>
+                </li>
+                <li>
+                    <a class="lang" href="javascript:" id="research-directions">
+                        研究方向
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="group-intro-wrapper">
+            <p>
+                {{ page.groupIntro }}
+            </p>
+        </div>
+        <div class="research-directions-wrapper hidden">
+            <div class="list-group" style="margin-top: 20px; margin-bottom: 2%">
+                <li class="list-group-item">方向1</li>
+                <li class="list-group-item">方向2</li>
+                <li class="list-group-item">方向3</li>
+                <li class="list-group-item">方向4</li>
+                <li class="list-group-item">方向5</li>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{"/assets/vendor/startbootstrap-clean-blog/js/home.js" | relative_url}}"></script>

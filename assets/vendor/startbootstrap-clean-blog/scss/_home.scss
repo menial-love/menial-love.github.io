@@ -1,0 +1,209 @@
+@media (max-width: 768px) {
+  .main-box {
+    width: 80%;
+    margin: 0 auto;
+    header.masthead {
+      // TIP: Background images are set within the HTML using inline CSS!
+      background: no-repeat center center;
+      background-color: $gray-600;
+      background-attachment: scroll;
+      position: relative;
+      height: 300px;
+      @include background-cover;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #212529;
+        opacity: 0.5;
+      }
+      .welcome-box {
+        position: relative;
+        text-align: center;
+        padding-top: 100px;
+        .welcome {
+          color: white;
+          font-family: maobi, serif;
+          font-size: 40px;
+        }
+        .group {
+          color: white;
+          font-family: 华文行楷, serif;
+          font-size: 22px;
+        }
+      }
+    }
+    .box1 {
+      margin-top: 50px;
+      .content-nav-wrap {
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 34px;
+        .nav-wrap {
+          float: left;
+          li.act {
+            border-bottom: 2px solid #ed4259;
+            line-height: 40px;
+            margin-bottom: -1px;
+            list-style: none outside none;
+            a {
+              color: #ed4259;
+              &:hover {
+                color: #ed4259;
+              }
+            }
+          }
+          li {
+            float: left;
+            font: 18px/40px FZZCYSK;
+            height: 40px;
+            overflow: hidden;
+            padding: 0 21px;
+            text-align: center;
+            list-style: none outside none;
+            a {
+              color: #a6a6a6;
+              display: block;
+              max-height: 36px;
+              overflow: hidden;
+              transition: color .3s, background-color .3s;
+              &:hover {
+                color: #ed4259;
+              }
+            }
+          }
+        }
+      }
+      .group-intro-wrapper {
+        p {
+          font: 16px/32px PingFangSC-Regular,-apple-system,Simsun;
+          text-indent: 42px;
+        }
+      }
+      .research-directions-wrapper {
+        .list-group {
+          li {
+            font: 16px/32px PingFangSC-Regular,-apple-system,Simsun;
+          }
+        }
+      }
+    }
+    .lang {
+      font-family: FZZCYSK, serif;
+      font-weight: 600;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .main-box {
+    header.masthead {
+      // TIP: Background images are set within the HTML using inline CSS!
+      margin: 0 0 50px 80px;
+      background: no-repeat center center;
+      background-color: $gray-600;
+      background-attachment: scroll;
+      position: relative;
+      height: 300px;
+      width: 85%;
+      @include background-cover;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #212529;
+        opacity: 0.5;
+      }
+      .welcome-box {
+        position: relative;
+        text-align: center;
+        padding-top: 100px;
+        .welcome {
+          color: white;
+          font-family: maobi, serif;
+          font-size: 50px;
+        }
+        .group {
+          color: white;
+          font-family: 华文行楷, serif;
+          font-size: 26px;
+        }
+      }
+    }
+    //.box2 {
+    //  margin: 0 40px;
+    //  h4 {
+    //    margin-bottom: 0;
+    //    padding-bottom: 10px;
+    //    border-bottom: 1px solid #d0cfcf;
+    //  }
+    //  .group-intro {
+    //    p {
+    //      line-height: 30px;
+    //      margin-top: 10px;
+    //      margin-bottom: 0;
+    //    }
+    //  }
+    //}
+    .box1 {
+      margin: 0 80px;
+      .content-nav-wrap {
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 34px;
+        .nav-wrap {
+          float: left;
+          li.act {
+            border-bottom: 2px solid #ed4259;
+            line-height: 40px;
+            margin-bottom: -1px;
+            list-style: none outside none;
+            a {
+              color: #ed4259;
+              &:hover {
+                color: #ed4259;
+              }
+            }
+          }
+          li {
+            float: left;
+            font: 18px/40px FZZCYSK;
+            height: 40px;
+            overflow: hidden;
+            padding: 0 21px;
+            text-align: center;
+            list-style: none outside none;
+            a {
+              color: #a6a6a6;
+              display: block;
+              max-height: 36px;
+              overflow: hidden;
+              transition: color .3s, background-color .3s;
+              &:hover {
+                color: #ed4259;
+              }
+            }
+          }
+        }
+      }
+      .group-intro-wrapper {
+        p {
+          font: 16px/32px PingFangSC-Regular,-apple-system,Simsun;
+          text-indent: 42px;
+        }
+      }
+      .research-directions-wrapper {
+        .list-group {
+          li {
+            font: 16px/32px PingFangSC-Regular,-apple-system,Simsun;
+          }
+        }
+      }
+    }
+    .lang {
+      font-family: FZZCYSK, serif;
+      font-weight: 600;
+    }
+  }
+}

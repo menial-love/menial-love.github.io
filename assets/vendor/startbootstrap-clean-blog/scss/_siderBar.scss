@@ -1,0 +1,161 @@
+@media (max-width: 767px) {
+  .nav-side {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5%;
+    background-color: #2e353d;
+    .toggle-btn {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 10 !important;
+      padding: 3px;
+      background-color: #ffffff;
+      color: #000;
+      width: 40px;
+      text-align: center;
+      font: normal normal normal 24px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      &:before {
+        content: "\f0c9";
+        box-sizing: border-box;
+      }
+    }
+    // 低分辨率隐藏校徽校名
+    .icon {
+      display: none;
+    }
+    .group-name {
+      line-height: 50px;
+      background-color: #23282e;
+      font-family: maobi, serif;
+      a {
+        color: #e1ffff;
+        margin-left: 20px;
+      }
+    }
+    .menu-list {
+      transition: all, .5s;
+    }
+    .menu-list .menu-content {
+      padding: 0;
+    }
+    .menu-list .menu-content li {
+      list-style: none;
+      height: 50px;
+      transition: background-color .5s;
+      &:hover {
+        background-color: #fa4a4a;
+      }
+      a {
+        color: #e1ffff;
+        display: block;
+        padding: 0 20px;
+        line-height: 50px;
+        cursor: pointer;
+        transition: all .5s;
+        font-size: 10px;
+        font-weight: bold;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    // iconfont样式
+    .menu-list .menu-content .nav-item {
+      .iconfont {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        color: #e1ffff;
+        fill: currentColor;
+      }
+    }
+  }
+  .hide {
+    height: 0;
+    display: none;
+  }
+  .no-hide {
+    height: 450px;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .nav-side {
+    float: left;
+    position: fixed;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: #2e353d;
+    width: 300px;
+    height: 100%;
+    .toggle-btn {
+      display: none;
+    }
+    .icon {
+      background-color: #e9eff6;
+      padding: 5%;
+    }
+    .icon img.school-badge {
+      width: 80px;
+      height: 80px;
+    }
+    .icon img.school-name {
+      width: 170px;
+    }
+    .icon span {
+      font-family: FontAwesome, serif;
+      font-size: 24px;
+      align-content: center;
+    }
+    .group-name {
+      text-align: center;
+      line-height: 50px;
+      background-color: #e9eff6;
+      a {
+        font-weight: bold;
+        color: black
+      }
+    }
+    .menu-list {
+    }
+    .menu-list .menu-content {
+      padding: 0;
+    }
+    .menu-list .menu-content li {
+      list-style: none;
+      height: 90px;
+      border-bottom: 1px solid #444444;
+      transition: all .5s;
+      &:hover {
+        background-color: #fa4a4a;
+      }
+      a {
+        color: #e1ffff;
+        display: block;
+        padding: 0 75px;
+        line-height: 100px;
+        cursor: pointer;
+        transition: all .5s;
+        font-weight: bold;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    // iconfont样式
+    .menu-list .menu-content .nav-item {
+      .iconfont {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        color: #e1ffff;
+        fill: currentColor;
+      }
+    }
+  }
+}

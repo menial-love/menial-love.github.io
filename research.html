@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="grid-striped">
+        {% for post in site.posts %}
+        <div class="row p-3">
+            <div class="col-sm-6">
+                <img class="post-img" src={{post.cover}}
+                style="width: 90%; max-width: 100%; height: auto; vertical-align: middle">
+            </div>
+            <div class="col-sm-6">
+                <h4>{{ post.title }}</h4>
+                {{ post.excerpt | strip_html | truncatewords: 60 }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,180 @@
+.people-head {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+// 分辨率大于1106px该媒体查询生效
+@media (min-width: 1106px) {
+  .people-detail-wrap {
+    margin-top: -120px;
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    background-color: white;
+    border-top: 3px solid #e9e9e9;
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    border-radius: 20px;
+    .professor-wrap {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 30px 20px 30px 20px;
+      .professor {
+        display: flex;
+        justify-content: center;
+        p {
+          display: inline-block;
+          max-width: 166px;
+          margin-left: 10px;
+          margin-bottom: 0;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .student-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 50px;
+    .student {
+      display: flex;
+      width: 253px;
+      height: 170px;
+      justify-content: center;
+      p {
+        display: inline-block;
+        max-width: 100px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+// 像素在768-1106px时该媒体查询生效
+@media (min-width: 768px) and (max-width: 1106px) {
+  .people-detail-wrap {
+    margin-top: -120px;
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: white;
+    border-top: 3px solid #e9e9e9;
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    border-radius: 20px;
+    .professor-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 30px 20px 30px 20px;
+      .professor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        p {
+          display: inline-block;
+          max-width: 166px;
+          margin-left: 10px;
+          margin-bottom: 0;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .student-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 50px;
+    width: 506px;
+    margin-left: auto;
+    margin-right: auto;
+    .student {
+      display: flex;
+      width: 253px;
+      height: 170px;
+      justify-content: center;
+      p {
+        display: inline-block;
+        max-width: 100px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+// 分辨率小于768px生效
+@media (max-width: 768px) {
+  .people-detail-wrap {
+    position: relative;
+    z-index: 10;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    background-color: white;
+    border-top: 3px solid #e9e9e9;
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    border-radius: 20px;
+    .professor-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 30px 20px 30px 20px;
+      .professor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        p {
+          display: inline-block;
+          max-width: 166px;
+          margin-left: 10px;
+          margin-bottom: 0;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .student-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    .student {
+      display: flex;
+      width: 253px;
+      height: 170px;
+      justify-content: center;
+      p {
+        display: inline-block;
+        max-width: 100px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+img.member-photo {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+}

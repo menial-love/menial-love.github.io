@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<img class="people-head" src="img/bg-post.jpeg" alt=""/>
+<div class="people-detail-wrap">
+    <h4 style="text-align: center; padding-top: 20px">教授</h4>
+    <div class="professor-wrap">
+        {% for doctor in site.doctors %}
+        <div class="professor">
+            <img class="member-photo" src={{doctor.photo}} alt="">
+            <p>{{ doctor.intro }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<h4 style="text-align: center; margin-top: 40px">学生</h4>
+<div class="student-wrap">
+    {% for member in site.members %}
+    <div class="student">
+        <img class="member-photo" src={{member.photo}} alt=""/>
+        <p>{{ member.intro }}</p>
+    </div>
+    {% endfor %}
+</div>
