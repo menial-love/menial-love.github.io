@@ -1,4 +1,4 @@
-// 小于768px生效
+// 小于768px此媒体查询生效
 @media (max-width: 768px) {
   .main-box {
     width: 80%;
@@ -26,7 +26,7 @@
         padding-top: 100px;
         .welcome {
           color: white;
-          font-family: 华文行楷, serif;
+          font-family: maobi, serif;
           font-size: 40px;
         }
         .group {
@@ -96,18 +96,20 @@
     }
   }
 }
-// 屏幕分辨率大于768px时生效
+// 大于768px生效
 @media (min-width: 768px) {
   .main-box {
+    .header-box {
+      margin: 0 40px 50px 40px;
+    }
     header.masthead {
       // TIP: Background images are set within the HTML using inline CSS!
-      margin: 0 0 50px 80px;
       background: no-repeat center center;
       background-color: $gray-600;
       background-attachment: scroll;
       position: relative;
       height: 300px;
-      width: 85%;
+      width: 100%;
       @include background-cover;
       .overlay {
         position: absolute;
@@ -124,7 +126,7 @@
         padding-top: 100px;
         .welcome {
           color: white;
-          font-family: 华文行楷, serif;
+          font-family: maobi, serif;
           font-size: 50px;
         }
         .group {
@@ -150,7 +152,7 @@
     //  }
     //}
     .box1 {
-      margin: 0 40px;
+      margin: 0 80px;
       .content-nav-wrap {
         border-bottom: 1px solid #e6e6e6;
         margin-bottom: 34px;

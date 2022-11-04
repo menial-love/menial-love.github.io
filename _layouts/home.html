@@ -2,18 +2,20 @@
 layout: default
 ---
 <div class="main-box">
-    {% if page.background %}
-    <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-    {% else %}
-    <header class="masthead">
-    {% endif %}
-        <div class="overlay">
-        </div>
-        <div class="welcome-box">
-            <div class="welcome">欢迎访问</div>
-            <div class="group">浙江工业大学网络空间安全研究院无人系统组</div>
-        </div>
-    </header>
+    <div class="header-box">
+        {% if page.background %}
+        <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+        {% else %}
+        <header class="masthead">
+        {% endif %}
+            <div class="overlay">
+            </div>
+            <div class="welcome-box">
+                <div class="welcome">欢迎访问</div>
+                <div class="group">浙江工业大学网络空间安全研究院无人系统组</div>
+            </div>
+        </header>
+    </div>
 
     <div class="box1">
         <div class="content-nav-wrap clearfix">
