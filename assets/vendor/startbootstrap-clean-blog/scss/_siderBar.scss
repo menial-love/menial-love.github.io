@@ -86,6 +86,7 @@
 }
 @media (min-width: 768px) {
   .nav-side {
+    overflow: auto;
     float: left;
     position: fixed;
     font-size: 16px;
