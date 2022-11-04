@@ -1,3 +1,4 @@
+// 小于768px生效
 @media (max-width: 768px) {
   .main-box {
     width: 80%;
@@ -95,6 +96,7 @@
     }
   }
 }
+// 屏幕分辨率大于768px时生效
 @media (min-width: 768px) {
   .main-box {
     header.masthead {
@@ -148,7 +150,7 @@
     //  }
     //}
     .box1 {
-      margin: 0 80px;
+      margin: 0 40px;
       .content-nav-wrap {
         border-bottom: 1px solid #e6e6e6;
         margin-bottom: 34px;
