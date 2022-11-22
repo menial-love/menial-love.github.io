@@ -10,7 +10,11 @@ layout: default
                 style="width: 90%; max-width: 100%; height: auto; vertical-align: middle">
             </div>
             <div class="col-sm-6">
-                <h4>{{ post.title }}</h4>
+                <h4>
+                    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                        {{ post.title }}
+                    </a>
+                </h4>
                 {{ post.excerpt | strip_html | truncatewords: 60 }}
             </div>
         </div>
