@@ -8,20 +8,7 @@ p {
 a:hover, a:focus {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-  @include sans-serif-font;
-}
 
-blockquote {
-  font-style: italic;
-  color: $gray-600;
-}
 .section-heading {
   font-size: 36px;
   font-weight: 700;
@@ -68,7 +55,7 @@ img::-moz-selection {
 }
 @media (min-width: 768px) {
   .main-wrapper {
-    margin-left: 290px;
+    margin-left: 298px;
   }
 }
 
