@@ -39,25 +39,25 @@ doctors:
 
 members:
   - name: 大娃
-    photo: /img/大娃.jpeg
+    photo: /img/avatar/大娃.jpeg
     intro: 在此输入简介
   - name: 二娃
-    photo: /img/二娃.jpeg
+    photo: /img/avatar/二娃.jpeg
     intro: 在此输入简介
   - name: 三娃
-    photo: /img/三娃.jpeg
+    photo: /img/avatar/三娃.jpeg
     intro: 在此输入简介
   - name: 四娃
-    photo: /img/四娃.jpeg
+    photo: /img/avatar/四娃.jpeg
     intro: 在此输入简介
   - name: 五娃
-    photo: /img/五娃.jpeg
+    photo: /img/avatar/五娃.jpeg
     intro: 在此输入简介
   - name: 六娃
-    photo: /img/六娃.jpeg
+    photo: /img/avatar/六娃.jpeg
     intro: 在此输入简介
   - name: 七娃
-    photo: /img/七娃.jpeg
+    photo: /img/avatar/七娃.jpeg
     intro: 在此输入简介
 
 # Build settings
