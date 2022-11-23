@@ -62,6 +62,11 @@ members:
 
 # Build settings
 theme: minima
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 load_paths:
   - _sass
 plugins:
